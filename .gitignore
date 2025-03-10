@@ -1,0 +1,18 @@
+# Node modules (dependencies)
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Heroku-related files
+.DS_Store
+*.swp
+
+# Build files
+public/build/
+dist/
