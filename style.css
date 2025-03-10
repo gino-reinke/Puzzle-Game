@@ -1,0 +1,129 @@
+BODY {
+    background: #121212; 
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Centering Game Board */
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#table {
+    border: 5px solid #a86c3d;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px #a86c3d, 0px 0px 30px #a86c3d;
+}
+
+/* Portfolio Link */
+#portfolio-link {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #8f5a2a;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+/* Game Tiles */
+.tile1, .tile2, .tile3, .tile4, 
+.tile5, .tile6, .tile7, .tile8, 
+.tile9, .tile10, .tile11, .tile12, 
+.tile13, .tile14, .tile15, .tile16 {
+    display: table-cell;
+    width: 120px;
+    height: 120px;
+    border: 1px solid white;
+    background: url("./number_puzzle_game_image.png");
+    background-size: 480px 480px;
+    cursor: pointer;
+}
+
+/* First row */
+.tile1  { background-position: 0px 0px; }
+.tile2  { background-position: -120px 0px; }
+.tile3  { background-position: -240px 0px; }
+.tile4  { background-position: -360px 0px; }
+
+/* Second row */
+.tile5  { background-position: 0px -120px; }
+.tile6  { background-position: -120px -120px; }
+.tile7  { background-position: -240px -120px; }
+.tile8  { background-position: -360px -120px; }
+
+/* Third row */
+.tile9  { background-position: 0px -240px; }
+.tile10 { background-position: -120px -240px; }
+.tile11 { background-position: -240px -240px; }
+.tile12 { background-position: -360px -240px; }
+
+/* Fourth row */
+.tile13 { background-position: 0px -360px; }
+.tile14 { background-position: -120px -360px; }
+.tile15 { background-position: -240px -360px; }
+.tile16 { background: white; cursor: default; }
+
+/* Win Popup Styling */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.9);
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+}
+
+.popup-content {
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.popup h2 {
+    margin: 10px 0;
+    color: #f5f5f5;
+    font-size: 24px;
+}
+
+.popup button {
+    background: #8f5a2a;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.popup button:hover {
+    background: #a86c3d;
+}
+
+/* Styled New Game Button */
+#new-game-button {
+    background: #8f5a2a;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    margin-top: 20px;
+}
+
+#portfolio-link:hover, #new-game-button:hover {
+    background: #a86c3d;
+}
